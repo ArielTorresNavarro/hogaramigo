@@ -1,0 +1,60 @@
+header {
+    border: 2px solid;
+    border-color: black;
+    display: flex;                  /* Usamos Flexbox para alinear el logo y el nav en fila */
+    justify-content: space-between; /* Espaciamos el logo y la barra de navegación */
+    align-items: center;            /* Centramos verticalmente los elementos */
+    padding: 10px;                  /* Añadimos algo de padding */
+    background-color: #f5f5f5;      /* Puedes cambiar el color de fondo si quieres */
+}
+
+/*Estilos del div que contiene el logo, el titulo y el subtitulo */
+.logo {
+    border: 2px solid;
+    border-color: black;
+    display: flex;              /* Para alinear el logo y el texto del refugio */
+    flex-direction: column;
+    align-items: center;        /* Centramos verticalmente la imagen y el texto */
+}
+
+.logo img {
+    width: 80px;                    /* Ajusta el tamaño del logo */
+    margin-right: 10px;             /* Añadimos un margen a la derecha de la imagen */
+}
+
+.logo h1 {
+    font-size: medium;
+    margin: 0;
+}
+
+.logo p {
+    font-size: x-small;
+}
+/*Estilos de la barra de navegación*/
+
+nav {
+    flex-grow: 1;                   /* Hacemos que el <nav> ocupe todo el espacio restante */
+}
+
+nav ul {
+    border: 2px solid;
+    border-color: red;
+    display: flex;                  /* Flexbox para alinear los items de la barra de navegación en fila */
+    justify-content: space-around;  /* Espaciamos los elementos de la barra de navegación */
+    list-style-type: none;          /* Quitamos los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex-grow: 1;                   /* Cada elemento <li> ocupa el mismo espacio */
+    text-align: center;             /* Centramos el texto dentro de cada <li> */
+}
+
+nav ul li a {
+    display: block;                 /* Hacemos que los enlaces ocupen todo el espacio del <li> y permite que todo el espacio sea clickeable*/
+    padding: 10px;                  /* Añadimos un padding para que los enlaces sean más grandes */
+    text-decoration: none;          /* Eliminamos el subrayado de los enlaces */
+    color: #000;                    /* Cambiamos el color del texto */
+}
+
